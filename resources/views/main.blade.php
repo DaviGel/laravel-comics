@@ -11,7 +11,7 @@
 
 <body>
     @include('layouts._partials.header')
-    <main>main</main>
+    <main>main .</main>
     @include('layouts._partials.footer')
 </body>
 
