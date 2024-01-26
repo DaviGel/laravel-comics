@@ -14,5 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('main');
+    $menu_db = config('menudb');
+    $fumetti_db = config('fumettidb');
+    return view('main', compact('menu_db', 'fumetti_db'));
 });

@@ -11,7 +11,31 @@
 
 <body>
     @include('layouts._partials.header')
-    <main>main .</main>
+    <main>
+        <div class="jumbotron">
+            <img class="img-fluid" src="{{ Vite::asset('resources/img/jumbotron.jpg') }}" alt="jumbotron-img">
+            <div class="container">
+                <span class="current-series">
+                    Current series
+                </span>
+            </div>
+        </div>
+        <div class="bg-black-like text-center">
+            <div class="container pt-5 ">
+                <ul class="d-flex flex-wrap">
+                    @foreach ($fumetti_db as $fumetto)
+                        <li>
+                            <img src="{{ $fumetto['thumb'] }}" alt="jumbotron-img">
+                            <p class="series text-white">{{ $fumetto['series'] }}</p>
+                        </li>
+                    @endforeach
+                </ul>
+            </div>
+            <span class="load-more">
+                Load more
+            </span>
+        </div>
+    </main>
     @include('layouts._partials.footer')
 </body>
 

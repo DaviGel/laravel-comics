@@ -1,7 +1,6 @@
 <?php
 
 return [
-  $menu_db = [
     'Characters',
     'Comics',
     'Movies',
@@ -12,5 +11,4 @@ return [
     'Fans',
     'News',
     'Shop',
-  ]
 ];
