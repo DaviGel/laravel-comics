@@ -1,10 +1,8 @@
 @import "~bootstrap/scss/bootstrap";
-@import "_partials/reset.scss";
 
-body {
-    //background-image: url("../img/duck.jpg");
-
-    h1 {
-        color: blue;
+header {
+    .top-header {
+        background-color: #0282f9;
+        color: #fff;
     }
 }
