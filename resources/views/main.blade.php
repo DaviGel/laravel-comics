@@ -25,7 +25,7 @@
                 <ul class="d-flex flex-wrap">
                     @foreach ($fumetti_db as $fumetto)
                         <li>
-                            <img src="{{ $fumetto['thumb'] }}" alt="jumbotron-img">
+                            <img src="{{ $fumetto['thumb'] }}" alt="{{ $fumetto['type'] }}">
                             <p class="series text-white">{{ $fumetto['series'] }}</p>
                         </li>
                     @endforeach
@@ -34,6 +34,18 @@
             <span class="load-more">
                 Load more
             </span>
+        </div>
+        <div class="banner">
+            <div class="container">
+                <ul class="d-flex justify-content-around align-items-center">
+                    @foreach ($banner_db as $element)
+                        <li>
+                            <img src="{{ Vite::asset($element['path']) }}" alt="{{ $element['alt'] }}">
+                            <span class="text-uppercase text-white">{{ $element['caption'] }}</span>
+                        </li>
+                    @endforeach
+                </ul>
+            </div>
         </div>
     </main>
     @include('layouts._partials.footer')

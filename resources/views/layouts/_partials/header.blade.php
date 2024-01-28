@@ -19,7 +19,7 @@
                 </a>
               </li>
             @endforeach
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <input class="form-control shadow-none me-2 border-2 border-top-0 border-start-0 border-end-0 border-primary rounded-0" type="search" placeholder="Search" aria-label="Search">
           </ul>
         </div>
       </div>
