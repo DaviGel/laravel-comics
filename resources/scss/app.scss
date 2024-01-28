@@ -1,5 +1,6 @@
 @import "~bootstrap/scss/bootstrap";
 
+// HEADER
 header {
     .top-header {
         background-color: #0282f9;
@@ -21,6 +22,7 @@ header {
     }
 }
 
+// MAIN
 main {
     .jumbotron {
         height: 400px;
@@ -90,6 +92,7 @@ main {
     }
 }
 
+// FOOTER
 footer {
     .top-footer {
         background-image: url("../img/footer-bg.jpg");
